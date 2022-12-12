@@ -16,6 +16,7 @@ Denoise post processed cephalometric images
 
 ![example1](https://user-images.githubusercontent.com/65393045/206981235-1114622d-c9c1-4259-b31b-88a40c1c15ac.png)
 ![example21](https://user-images.githubusercontent.com/65393045/206981246-dea2e817-709e-40cf-96cf-519bcd84074b.png)
+![example4](https://user-images.githubusercontent.com/65393045/206997324-ed535bdc-90cc-4e2a-99f8-addea7638dcf.png)
 
 
 
@@ -24,3 +25,19 @@ Denoise post processed cephalometric images
 - Denoising model named DNCNN was referenced for embedding residual structure to encoder
 - To preserve the sharpness of input image, we employed trainable sobel operator to each featuremap
 - The example of model architecture is displayed in below
+
+![example3](https://user-images.githubusercontent.com/65393045/206994032-617fc8b6-4ea9-45d3-9bbc-78fddb263691.png)
+
+
+
+## Training detail
+
+![example5](https://user-images.githubusercontent.com/65393045/206997792-4e1984dc-54f8-49b3-8706-62afba15e8ef.png)
+
+
+
+## Results
+
+![example6](https://user-images.githubusercontent.com/65393045/206998290-d51ee598-82c7-4dc6-9ae4-efd08943d8fe.png)
+![example7](https://user-images.githubusercontent.com/65393045/206998352-a731161f-4dce-46fd-9547-a28381511bf2.png)
+
