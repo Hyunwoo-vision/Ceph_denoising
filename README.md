@@ -32,12 +32,12 @@ Denoise post processed cephalometric images
 
 ## Training detail
 
-![example5](https://user-images.githubusercontent.com/65393045/206997792-4e1984dc-54f8-49b3-8706-62afba15e8ef.png)
+![example9](https://user-images.githubusercontent.com/65393045/207000103-50fdc481-8a37-4843-bc68-87a830855cd5.png)
 
 
 
 ## Results
 
-![example6](https://user-images.githubusercontent.com/65393045/206998290-d51ee598-82c7-4dc6-9ae4-efd08943d8fe.png)
-![example7](https://user-images.githubusercontent.com/65393045/206998352-a731161f-4dce-46fd-9547-a28381511bf2.png)
+![example8](https://user-images.githubusercontent.com/65393045/206998985-b14232b1-a4ec-48b9-80d8-f3ac194dddbe.png)
+
 
