@@ -42,3 +42,10 @@ Denoise post processed cephalometric images
 
 
 
+## Convert to torchscript for distribution
+- For distribution of this denoising module, the pytorch based model need to be converted to c++ basaed model (torchscript)
+- Furthermore, libtorch library need be installed to use the torchscript model in c++ environment
+- Syntax of code is slightly different between pytorch and torchscript (so the pytorch based code had been corrected)
+- Lastly the torchscript based model was embedded to our ceph image process tool, "preset tool", with libtorch library installed 
+
+
