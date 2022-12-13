@@ -36,8 +36,9 @@ Denoise post processed cephalometric images
 
 
 
-## Results
+## Results example
 
-![example8](https://user-images.githubusercontent.com/65393045/206998985-b14232b1-a4ec-48b9-80d8-f3ac194dddbe.png)
+![sample10](https://user-images.githubusercontent.com/65393045/207196801-d064fcf5-b936-493f-815b-71b72aff7779.png)
+
 
 
