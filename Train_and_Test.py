@@ -63,3 +63,36 @@ def train(model, data_dl, scheduler, start):
     final_ssim = running_ssim / len(data_dl.dataset)
 
     return final_loss, final_psnr, final_ssim
+
+# %%
+'''validation function define'''
+def test(model, data_dl):
+    print('test began')
+    # epoch는 이미지를 저장할때, 이미지의 이름으로 사용 (미적용)
+    model.eval()
+    running_loss = 0.0
+    running_psnr = 0.0
+    running_ssim = 0.0
+    with torch.no_grad():
+        for ba, (noisy, clean) in enumerate(data_dl):
+            image = noisy.float().to(device)
+            label = clean.float().to(device)
+
+            outputs = model(image)
+            loss = criterion(outputs, label)
+
+            running_loss += loss.item() * noisy.shape[0]
+            batch_psnr = PSNR(outputs, label)
+            batch_ssim = SSIMbatch(outputs, label)
+            running_psnr += batch_psnr
+            running_ssim += batch_ssim
+
+        # outputs = outputs.cpu()
+        # save_image(outputs, f'/content/outputs/{epoch}.png')
+    
+    final_loss = running_loss / len(data_dl.dataset)
+    # final_psnr = running_psnr / int(len(testset)/data_dl.batch_size)
+    final_psnr = running_psnr / (ba+1)
+    final_ssim = running_ssim / len(data_dl.dataset)
+
+    return final_loss, final_psnr, final_ssim
